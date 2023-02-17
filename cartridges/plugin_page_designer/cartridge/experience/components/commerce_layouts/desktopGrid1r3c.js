@@ -16,7 +16,16 @@ module.exports.render = function (context, modelIn) {
     const model = modelIn || new HashMap();
     const component = context.component;
 
+    const content = context.content;
+
+    const firstColumn = content.firstColumn;
+    const secondColumn = content.secondColumn;
+    const thirdColumn = content.thirdColumn;
+
     model.regions = PageRenderHelper.getRegionModelRegistry(component);
+    model.regions.column1.setClassName("region col-12 col-md-4 order-" + firstColumn);
+    model.regions.column2.setClassName("region col-12 col-md-4 order-" + secondColumn);
+    model.regions.column3.setClassName("region col-12 col-md-4 order-" + thirdColumn);
 
     // instruct 24 hours relative pagecache
     const expires = new Date();
