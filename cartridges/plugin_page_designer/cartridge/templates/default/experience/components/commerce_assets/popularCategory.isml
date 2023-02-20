@@ -3,13 +3,14 @@
     assets.addCss('/css/experience/components/commerceAssets/popularCategory.css');
 </isscript>
 
-<div class="popular-category-extended <isif condition=${pdict.category.ctaTitlePositionTop === true}>d-flex flex-column-reverse</isif>">
+<div
+    class="popular-category-extended <isif condition=${pdict.category.ctaTitlePositionTop}>d-flex flex-column-reverse</isif>">
     <div class="category-content-wrapper">
         <div class="image-cropper">
             <a href="${pdict.category.url}">
                 <div class="image-wrapper-${pdict.category.compID} image-wrapper">
                     <img src="${pdict.image.src.desktop}" alt="${pdict.category.ctaTitle}"
-                        class="category-picture w-100 h-100 object-fit-cover" />
+                        class="category-picture w-100 h-100 object-fit-cover" loading="lazy" />
                 </div>
             </a>
         </div>

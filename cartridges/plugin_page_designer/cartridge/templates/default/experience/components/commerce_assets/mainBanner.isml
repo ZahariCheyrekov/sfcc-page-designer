@@ -16,7 +16,9 @@
                             src="${pdict.image.src.mobile}"
                             style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY}"
                             <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}" title="${pdict.image.alt}"
+
                         </isif>
+                        loading="lazy"
                         />
                     </picture>
                     <figcaption class="image-heading-container">
