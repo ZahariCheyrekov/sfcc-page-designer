@@ -1,0 +1,49 @@
+{
+    "name": "Round Category Tile with Caption",
+    "description": "Round Category Tile displayed with a circular image.",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "popularCategory",
+            "name": "Popular Category",
+            "description": "Specify the popular Category to be Displayed.",
+            "attribute_definitions": [
+                {
+                    "id": "category",
+                    "name": "Category",
+                    "description": "Select Category to be displayed.",
+                    "type": "category",
+                    "required": true
+                },
+                {
+                    "id": "description",
+                    "name": "Description",
+                    "description": "Description to be displayed.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "ctaTitle",
+                    "name": "Call To Action",
+                    "description": "A call to action to be displayed.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "ctaTitlePositionTop",
+                    "name": "CTA Title Position At The Top",
+                    "description": "Click if you want to position CTA Title at the top.",
+                    "type": "boolean",
+                    "required": false
+                },
+                {
+                    "id": "image",
+                    "name": "Image",
+                    "type": "image",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

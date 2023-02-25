@@ -1,0 +1,27 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/commerceAssets/popularCategory.css');
+</isscript>
+
+<div
+    class="popular-category-extended <isif condition=${pdict.category.ctaTitlePositionTop}>d-flex flex-column-reverse</isif>">
+    <div class="category-content-wrapper">
+        <div class="image-cropper">
+            <a href="${pdict.category.url}">
+                <div class="image-wrapper-${pdict.category.compID} image-wrapper">
+                    <img src="${pdict.image.src.desktop}" alt="${pdict.category.ctaTitle}"
+                        class="category-picture w-100 h-100 object-fit-cover" loading="lazy" />
+                </div>
+            </a>
+        </div>
+
+        <div class="text-center popular-category-link my-3">
+            <a href="${pdict.category.url}" class="popular-category-label-a popular-cat-link text-decoration-none">
+                ${pdict.category.description}
+            </a>
+        </div>
+    </div>
+    <div class="popular-category-link my-2">
+        <a href="${pdict.category.url}" class="popular-category-label-a popular-cat-link">${pdict.category.ctaTitle}</a>
+    </div>
+</div>
